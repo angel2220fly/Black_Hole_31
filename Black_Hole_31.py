@@ -492,16 +492,13 @@ class compression:
 
                                                             
                                     INFO=Extract
-
-                                    Cut=int(INFO[:5],2)
-                                        #print(longl)
-                                    INFO=INFO[5:]                                 
+                            
                                     
                                     En2=0
                                         
-                                    En=int(INFO[:Cut],2)
+                                    En=int(INFO[:18],2)
                                         #print(longl)
-                                    INFO=INFO[Cut:]
+                                    INFO=INFO[18:]
                                     
                                     if En<=7:
                                         longl=int(INFO[:3],2)
